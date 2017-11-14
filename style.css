@@ -1,0 +1,17 @@
+body {
+    background: white;
+}
+.nav-tabs{
+	
+}
+li {
+	list-style-type: none;
+	display: inline-block;
+	margin-right: 20px;
+
+}
+
+#grapfroot{
+	margin-top: 10px;
+}
+.buttons{}

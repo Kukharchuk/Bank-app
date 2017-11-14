@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="node_modules/chart.js/dist/Chart.js"></script>
+    </head>
+    <body  style="width:450px; height:450px; margin-left: 15px">
+       <ul class="nav-tabs">
+		  <li class="active" id="grapf">
+		    <a href="#">Grapf</a>
+		  </li>
+		  <li id="table"><a href="#">Table</a></li>
+		</ul>
+		<input type="date" name="calendar" id="startID" placeholder="2017-9-1"></input> - <input type="date" name="calendar" id="endID" placeholder="2017-9-20"></input> 
+		<div id="grapfroot">
+			<select id="currencyNow">
+				  <option>USD</option>
+				  <option>RUB</option>
+				  <option>EUR</option>
+				</select>
+				<button id="showResult">Show</button><button id="saveGrapf">Save</button>	 
+				<canvas id="myChart" width="300" height="300"></canvas>		
+		</div>
+		<div id="tableroot">
+			<h3>Table of currency</h3> 
+			<table id="currTable">
+
+			</table>
+			<div  id="showAdding">
+			<select id="currencyNowTable">
+				  <option>USD</option>
+				  <option>RUB</option>
+				  <option>EUR</option>
+			</select><button id="addColumn">+</button>
+		</div>
+		</div>
+
+
+    </body>
+          <script type="text/javascript" src="bundle.js" charset="utf-8"></script>
+          
+          <script src="http://code.jquery.com/jquery-latest.js"></script>
+  		  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</html>
