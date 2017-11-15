@@ -110,12 +110,20 @@ function createTable(){
 				rate.push(data[i].Cur_OfficialRate.toFixed(3))
 			}
 
-			table.innerHTML += '<tbody><tr><th>' + selectCurr+'</th>';
+			var th = document.createElement('th');
+			table.appendChild(th)
+			th.innerText = selectCurr;
 			for (var d in date) {
-				console.log(date[d])
-			    table.innerHTML += '<td>'+date[d]+'</td><td>'+ rate[d]+'</td>';
+				var tr = document.createElement('tr');
+				table.appendChild(tr);
+				var tdDate = document.createElement('td');
+				var tdRate = document.createElement('td');
+				tr.appendChild(tdDate);
+				tr.appendChild(tdRate);
+			    tdDate.innerText = date[d];
+			    tdRate.innerText = rate[d];
 			}
-			table.innerHTML += '</tr></body>';
+			
 
 					
 		}
